@@ -1,4 +1,4 @@
-# junpro
+# LumbungKu
 Sistem monitoring pertanian
 
 Kelompok ASAP<br>
