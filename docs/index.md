@@ -2,11 +2,9 @@
 
 ## Kelompok ASAP
 
-**Siti Hashifah Qatrunnada (Front End Developer)**
-
-**Afix Vega Praditya (Software Architect, Front End Developer)**
-
-**Maulana Anjari Anggorokasih (Backend Developer, Software Architect)**
+- **Siti Hashifah Qatrunnada (Front End Developer)**
+- **Afix Vega Praditya (Software Architect, Front End Developer)**
+- **Maulana Anjari Anggorokasih (Backend Developer, Software Architect)**
 
 ## Junior Project TI
 Departemen Tekik Elektro dan Teknologi Informasi
@@ -14,7 +12,13 @@ Departemen Tekik Elektro dan Teknologi Informasi
 ## Modul 1
 Nama Aplikasi : Lumbungku <br>
 Tipe Aplikasi : Windows From <br><br>
-Kategori rencana dari aplikasi ini adalah SDGs ke-8, yaitu aplikasi mendukung produktivitas. Aplikasi ini menerapkan SDGs ke-8 karena membantu suatu desa untuk mengatur perangkat-perangkat desa yang diperlukan untuk suatu acara, seperti tenda, bangku, panggung, dan lain sebagainya. Tipe aplikasi yang digunakan adalah Windows Presentation Foundation. 
+LumbungKu adalah sebuah aplikasi Windows Forms yang dirancang untuk memudahkan sistem monitoring pertanian. LumbungKu diharapkan dapat membantu mendukung SDG's nomor 1 dan 2 dengan mengurangi kemiskinan, kelaparan, serta membangun agrikultur atau pertanian yang berkelanjutan.
+Selain itu, LumbungKu juga bertujuan untuk:
+- Mengurangi resiko gagal panen (sistem rekomendasi)
+- Mengoptimalkan hasil produksi pertanian
+- Mmemudahkan distribusi hasil panen (ke pabrik, ke pasar, ke konsumen)
+- Memudahkan manajemen lumbung (pupuk, obat, hasil panen, alat tani, truk)
+- Mensejahterakan para petani agar mendapatkan harga jual sesuai dengan kondisi pasar atau tidak terlalu rendah
 
 ## Permasalahan yang dipecahkan :
 1. Beberapa petani tidak mendapatkan harga jual yang layak dari hasil pertaniannya.
