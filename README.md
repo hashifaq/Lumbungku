@@ -1,10 +1,12 @@
 # LumbungKu
 Sistem monitoring pertanian
 
-Kelompok ASAP<br>
-Ketua Kelompok: Maulana Anjari Anggorokasih - 21/477748/TK/52619<br>
-Anggota 1: Afix Vega Praditya - 21/477810/TK/52629<br>
-Anggota 2: Siti Hashifah Qatrunnada - 21/483101/TK/53401
+Kelompok **ASAP**<br>
+Nama | Role | NIM | Responsibility
+---|---|---|---
+Maulana Anjari Anggorokasih | Ketua Kelompok | 21/477748/TK/52619 | Backend Developer, Software Architect
+Afix Vega Praditya | Anggota 1 | 21/477810/TK/52629 | Software Architect, Front End Developer
+Siti Hashifah Qatrunnada | Anggota 2 | 21/483101/TK/53401 | Front End Developer
 
 ## Class Diagram
 Berikut merupakan class diagram dari aplikasi LumbungKu, <br><br>
