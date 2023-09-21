@@ -1,7 +1,7 @@
 # LumbungKu
-Sistem monitoring pertanian
+LumbungKu adalah sebuah aplikasi Windows Forms yang dirancang untuk memudahkan sistem monitoring pertanian. LumbungKu diharapkan dapat membantu mendukung SDG’s nomor 1 dan 2 dengan mengurangi kemiskinan, kelaparan, serta membangun agrikultur atau pertanian yang berkelanjutan. 
 
-Kelompok **ASAP**<br>
+## Kelompok ASAP
 Nama | Role | NIM | Responsibility
 ---|---|---|---
 Maulana Anjari Anggorokasih | Ketua Kelompok | 21/477748/TK/52619 | Backend Developer, Software Architect
