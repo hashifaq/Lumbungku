@@ -8,3 +8,11 @@ C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\WFA_Lumbungku.pdb
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.exe
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.pdb
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.AssemblyReference.cache
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Login.resources
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Properties.Resources.resources
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.GenerateResource.cache
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.exe
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.pdb
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.SchedulePage.resources

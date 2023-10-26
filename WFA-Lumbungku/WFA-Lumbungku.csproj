@@ -69,6 +69,12 @@
     <Compile Include="FoodPrice.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Schedule.cs" />
+    <Compile Include="SchedulePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulePage.Designer.cs">
+      <DependentUpon>SchedulePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Weather.cs" />
     <Compile Include="Login.cs">
@@ -77,12 +83,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-	  <Compile Include="Register.cs">
-		  <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Include="Register.Designer.cs">
-		  <DependentUpon>Register.cs</DependentUpon>
-	  </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -96,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SchedulePage.resx">
+      <DependentUpon>SchedulePage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
