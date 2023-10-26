@@ -1,0 +1,5 @@
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.AssemblyReference.cache
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Login.resources
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Properties.Resources.resources
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.GenerateResource.cache
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.CoreCompileInputs.cache
