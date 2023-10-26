@@ -3,3 +3,8 @@ C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Properties.Resources.resources
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.GenerateResource.cache
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.CoreCompileInputs.cache
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\WFA_Lumbungku.exe.config
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\WFA_Lumbungku.exe
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\WFA_Lumbungku.pdb
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.exe
+C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.pdb

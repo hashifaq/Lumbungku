@@ -74,10 +74,7 @@ namespace WFA_Lumbungku {
             this.password = newPassword;
         }
 
-        public object getProfile(int user_id)
-        {
-            this.user_id = user_id;
-        }
+        public object getProfile(int user_id) => this.user_id = user_id;
 
         public void updateProfile(int user_id)
         {
