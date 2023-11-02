@@ -504,7 +504,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "SchedulePage";
-            this.Text = "SchedulePage";
+            this.Text = "Schedule";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
