@@ -38,7 +38,7 @@
             this.tbUnit = new System.Windows.Forms.TextBox();
             this.tbTipe = new System.Windows.Forms.TextBox();
             this.tbStok = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             this.label1.Location = new System.Drawing.Point(375, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 36);
+            this.label1.Size = new System.Drawing.Size(356, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manajemen Inventaris";
             // 
@@ -76,7 +76,7 @@
             this.label2.Location = new System.Drawing.Point(44, 110);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama :";
             // 
@@ -88,7 +88,7 @@
             this.label3.Location = new System.Drawing.Point(43, 156);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 18);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Unit    :";
             // 
@@ -100,7 +100,7 @@
             this.label4.Location = new System.Drawing.Point(44, 204);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 18);
+            this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tipe   :";
             // 
@@ -112,7 +112,7 @@
             this.label5.Location = new System.Drawing.Point(44, 257);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 18);
+            this.label5.Size = new System.Drawing.Size(70, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Stok   :";
             // 
@@ -124,7 +124,7 @@
             this.label6.Location = new System.Drawing.Point(427, 105);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 18);
+            this.label6.Size = new System.Drawing.Size(80, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Search :";
             // 
@@ -160,13 +160,13 @@
             this.tbStok.Size = new System.Drawing.Size(249, 20);
             this.tbStok.TabIndex = 9;
             // 
-            // textBox5
+            // tbSearch
             // 
-            this.textBox5.Location = new System.Drawing.Point(511, 107);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(469, 20);
-            this.textBox5.TabIndex = 10;
+            this.tbSearch.Location = new System.Drawing.Point(511, 107);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(469, 20);
+            this.tbSearch.TabIndex = 10;
             // 
             // btnAdd
             // 
@@ -285,7 +285,7 @@
             this.label7.Location = new System.Drawing.Point(45, 316);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 18);
+            this.label7.Size = new System.Drawing.Size(70, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Foto   :";
             // 
@@ -345,7 +345,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.tbStok);
             this.Controls.Add(this.tbTipe);
             this.Controls.Add(this.tbUnit);
@@ -379,7 +379,7 @@
         private System.Windows.Forms.TextBox tbUnit;
         private System.Windows.Forms.TextBox tbTipe;
         private System.Windows.Forms.TextBox tbStok;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
