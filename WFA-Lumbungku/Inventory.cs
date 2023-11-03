@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.Drawing;s
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,7 +36,7 @@ namespace WFA_Lumbungku
                 conn.Open();
                 dgvBarang.DataSource = null;    
 
-                sql = "SELECT * FROM select_product()";
+                sql = "SELECT * FROM public.product";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
@@ -56,12 +56,22 @@ namespace WFA_Lumbungku
             try
             {
                 conn.Open();
-                sql = "SELECT * FROM add_product(name , quantity, unit, type)";
+                sql = @"INSERT INTO public.product (user_id, name, quantity, unit, type, photo)
+                        VALUES (:_user_id, :_name, :_quantity, :_unit, :_type, :_photo);";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("name", tbNama.Text);
-                cmd.Parameters.AddWithValue("quantity", tbStok.Text);
-                cmd.Parameters.AddWithValue("unit", tbUnit.Text);
-                cmd.Parameters.AddWithValue("type", tbUnit.Text);
+                cmd.Parameters.AddWithValue("_user_id", 1);
+                cmd.Parameters.AddWithValue("_name", tbNama.Text);
+                if (int.TryParse(tbStok.Text, out int quantity))
+                {
+                    cmd.Parameters.AddWithValue("_quantity", quantity);
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid quantity value.");
+                }
+                cmd.Parameters.AddWithValue("_unit", tbUnit.Text);
+                cmd.Parameters.AddWithValue("_type", tbTipe.Text);
+                cmd.Parameters.AddWithValue("_photo", pictureBoxFoto.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
@@ -154,27 +164,112 @@ namespace WFA_Lumbungku
 
         private void btnReadHasil_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conn.Open();
+                dgvBarang.DataSource = null;
 
+                sql = "SELECT * FROM select_products_by_type('hasil');";
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                dt.Load(rd);
+
+                dgvBarang.DataSource = dt;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnReadBibit_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conn.Open();
+                dgvBarang.DataSource = null;
 
+                sql = "SELECT * FROM select_products_by_type('bibit');";
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                dt.Load(rd);
+
+                dgvBarang.DataSource = dt;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnReadAlat_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conn.Open();
+                dgvBarang.DataSource = null;
 
+                sql = "SELECT * FROM select_products_by_type('alat');";
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                dt.Load(rd);
+
+                dgvBarang.DataSource = dt;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        private void SearchByName(string name)
+        {
+            try
+            {
+                conn.Open();
+                dgvBarang.DataSource = null;
+
+                sql = "SELECT * FROM public.product WHERE name ILIKE @name";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("name", "%" + name + "%"); // Use ILIKE for case-insensitive search
+                dt = new DataTable();
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                dt.Load(rd);
+
+                dgvBarang.DataSource = dt;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Search Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-
+            string nameToSearch = tbSearch.Text;
+            SearchByName(nameToSearch);
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "All Files (*.*)|*.*";
+            openFileDialog.Multiselect = false;
 
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog.FileName;
+
+                pictureBoxFoto.Text = selectedFilePath;
+            }
         }
     }
 }
