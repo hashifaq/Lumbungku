@@ -93,3 +93,8 @@ C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Inventory.resources
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.SchedulePage.resources
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.CopyComplete
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\Newtonsoft.Json.xml
