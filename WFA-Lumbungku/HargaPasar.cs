@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace WFA_Lumbungku
 {
@@ -15,6 +16,96 @@ namespace WFA_Lumbungku
         public HargaPasar()
         {
             InitializeComponent();
+            getHargaProduk();
+            labelUpdate.Text = "Terakhir diupdate " + DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm");
         }
+        private async void getHargaProduk()
+        {
+            var foodPrice = new FoodPrice();
+            // Mendapatkan harga dari API
+            var json = await foodPrice.getFoodPriceFromAPI();
+
+            // Deserialisasi JSON ke dalam list objek KomoditasData
+            List<KomoditasData> prices = JsonConvert.DeserializeObject<List<KomoditasData>>(json);
+
+            // Mendapatkan bulan saat ini
+            string currentMonth = DateTime.Now.ToString("MMMM");
+
+            // Iterasi melalui semua komoditas
+            foreach (var price in prices)
+            {
+                // Mendapatkan nilai komoditas
+                string komoditas = price.Komoditas;
+
+                // Mendapatkan nilai untuk bulan saat ini
+                int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty(currentMonth).GetValue(price, null));
+
+                if (komoditas == "GKP Tingkat Petani")
+                {
+                    labelGKPTP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "GKP Tingkat Penggilingan")
+                {
+                    labelGKPPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "GKG Tingkat Penggilingan")
+                {
+                    labelGKGPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Beras Medium Penggilingan")
+                {
+                    labelBM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Beras Premium Penggilingan")
+                {
+                    labelBP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Jagung Pipilan Kering")
+                {
+                    labelJagung.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Kedelai Biji Kering (Lokal)")
+                {
+                    labelKedelai.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Bawang Merah")
+                {
+                    labelBawMer.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Cabai Merah Keriting")
+                {
+                    labelCMK.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Cabai Rawit Merah")
+                {
+                    labelCRM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Ayam Ras Pedaging (Hidup)")
+                {
+                    labelARP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+                else if (komoditas == "Telur Ayam Ras")
+                {
+                    labelTAR.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                }
+            }
+        }
+    }
+    public class KomoditasData
+    {
+        public string Komoditas { get; set; }
+        public string Tahun { get; set; }
+        public int Januari { get; set; }
+        public int Februari { get; set; }
+        public int Maret { get; set; }
+        public int April { get; set; }
+        public int Mei { get; set; }
+        public int Juni { get; set; }
+        public int Juli { get; set; }
+        public int Agustus { get; set; }
+        public int September { get; set; }
+        public int Oktober { get; set; }
+        public int November { get; set; }
+        public int Desember { get; set; }
     }
 }
