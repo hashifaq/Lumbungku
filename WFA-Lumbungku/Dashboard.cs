@@ -21,5 +21,26 @@ namespace WFA_Lumbungku
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HargaPasar hargaPasar = new HargaPasar();
+            hargaPasar.Show();
+            Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SchedulePage schedulePage = new SchedulePage();
+            schedulePage.Show();
+            Hide();
+        }
     }
 }

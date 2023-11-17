@@ -90,6 +90,27 @@ namespace WFA_Lumbungku
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SchedulePage schedulePage = new SchedulePage();
+            schedulePage.Show();
+            Hide();
+        }
     }
     public class KomoditasData
     {
