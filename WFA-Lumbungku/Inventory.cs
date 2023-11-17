@@ -271,5 +271,26 @@ namespace WFA_Lumbungku
                 pictureBoxFoto.Text = selectedFilePath;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HargaPasar hargaPasar = new HargaPasar();
+            hargaPasar.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SchedulePage schedulePage = new SchedulePage();
+            schedulePage.Show();
+            Hide();
+        }
     }
 }
