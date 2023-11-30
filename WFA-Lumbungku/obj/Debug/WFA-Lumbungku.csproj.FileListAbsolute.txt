@@ -150,9 +150,3 @@ C:\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.CopyComplete
 C:\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.exe
 C:\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.pdb
 C:\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Register.resources
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Register.resources
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\System.Net.Http.Extensions.dll
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\System.Net.Http.Primitives.dll
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\System.Net.Http.Extensions.xml
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA-Lumbungku.csproj.App.config
