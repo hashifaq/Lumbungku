@@ -41,39 +41,39 @@
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelLokasi = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelTemperature = new System.Windows.Forms.Label();
+            this.labelCondition = new System.Windows.Forms.Label();
+            this.labelLastUpdated = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelWind = new System.Windows.Forms.Label();
+            this.labelHumidity = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelRekomendasi = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.labelCMK = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.labelJagung = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.labelKedelai = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelBM = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.labelBP = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.labelBawMer = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -135,18 +135,19 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-13, -7);
+            this.button1.Location = new System.Drawing.Point(-13, -10);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.button1.Size = new System.Drawing.Size(278, 86);
             this.button1.TabIndex = 1;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel4
             // 
@@ -236,19 +237,19 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(764, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 20);
+            this.label1.Size = new System.Drawing.Size(115, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Selamat Datang, ";
             // 
-            // label2
+            // labelUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(881, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Kim Haerin";
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(881, 51);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(84, 19);
+            this.labelUsername.TabIndex = 3;
+            this.labelUsername.Text = "Kim Haerin";
             // 
             // pictureBox2
             // 
@@ -260,16 +261,16 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // labelLokasi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(873, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "D.I Yogyakarta";
+            this.labelLokasi.AutoSize = true;
+            this.labelLokasi.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLokasi.ForeColor = System.Drawing.Color.Gray;
+            this.labelLokasi.Location = new System.Drawing.Point(873, 34);
+            this.labelLokasi.Name = "labelLokasi";
+            this.labelLokasi.Size = new System.Drawing.Size(80, 13);
+            this.labelLokasi.TabIndex = 5;
+            this.labelLokasi.Text = "D.I Yogyakarta";
             // 
             // pictureBox3
             // 
@@ -288,7 +289,7 @@
             this.label4.ForeColor = System.Drawing.Color.SeaGreen;
             this.label4.Location = new System.Drawing.Point(286, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 35);
+            this.label4.Size = new System.Drawing.Size(159, 30);
             this.label4.TabIndex = 7;
             this.label4.Text = "LUMBUNGKU";
             // 
@@ -302,38 +303,38 @@
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             // 
-            // label6
+            // labelTemperature
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(93, 44);
-            this.label6.Name = "label6";
-            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(71, 35);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "28°C";
+            this.labelTemperature.AutoSize = true;
+            this.labelTemperature.Font = new System.Drawing.Font("Segoe UI Black", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTemperature.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelTemperature.Location = new System.Drawing.Point(93, 44);
+            this.labelTemperature.Name = "labelTemperature";
+            this.labelTemperature.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelTemperature.Size = new System.Drawing.Size(61, 30);
+            this.labelTemperature.TabIndex = 11;
+            this.labelTemperature.Text = "28°C";
             // 
-            // label7
+            // labelCondition
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(96, 74);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Berawan";
+            this.labelCondition.AutoSize = true;
+            this.labelCondition.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCondition.Location = new System.Drawing.Point(96, 74);
+            this.labelCondition.Name = "labelCondition";
+            this.labelCondition.Size = new System.Drawing.Size(62, 19);
+            this.labelCondition.TabIndex = 12;
+            this.labelCondition.Text = "Berawan";
             // 
-            // label8
+            // labelLastUpdated
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(43, 105);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(205, 17);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Terakhir diupdate Thu 26, 10:24pm";
+            this.labelLastUpdated.AutoSize = true;
+            this.labelLastUpdated.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastUpdated.ForeColor = System.Drawing.Color.Gray;
+            this.labelLastUpdated.Location = new System.Drawing.Point(43, 105);
+            this.labelLastUpdated.Name = "labelLastUpdated";
+            this.labelLastUpdated.Size = new System.Drawing.Size(173, 13);
+            this.labelLastUpdated.TabIndex = 13;
+            this.labelLastUpdated.Text = "Terakhir diupdate Thu 26, 10:24pm";
             // 
             // pictureBox6
             // 
@@ -345,39 +346,39 @@
             this.pictureBox6.TabIndex = 14;
             this.pictureBox6.TabStop = false;
             // 
-            // label9
+            // labelWind
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(204, 55);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Wind: 6KMPH";
+            this.labelWind.AutoSize = true;
+            this.labelWind.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWind.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelWind.Location = new System.Drawing.Point(204, 55);
+            this.labelWind.Name = "labelWind";
+            this.labelWind.Size = new System.Drawing.Size(73, 13);
+            this.labelWind.TabIndex = 15;
+            this.labelWind.Text = "Wind: 6KMPH";
             // 
-            // label10
+            // labelHumidity
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(204, 75);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 17);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Humidy: 86%";
+            this.labelHumidity.AutoSize = true;
+            this.labelHumidity.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHumidity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelHumidity.Location = new System.Drawing.Point(204, 75);
+            this.labelHumidity.Name = "labelHumidity";
+            this.labelHumidity.Size = new System.Drawing.Size(70, 13);
+            this.labelHumidity.TabIndex = 16;
+            this.labelHumidity.Text = "Humidy: 86%";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.labelRekomendasi);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.labelTemperature);
+            this.groupBox1.Controls.Add(this.labelHumidity);
+            this.groupBox1.Controls.Add(this.labelCondition);
+            this.groupBox1.Controls.Add(this.labelWind);
+            this.groupBox1.Controls.Add(this.labelLastUpdated);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(235, 104);
@@ -395,20 +396,20 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(367, 103);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(317, 17);
+            this.label11.Size = new System.Drawing.Size(270, 13);
             this.label11.TabIndex = 21;
             this.label11.Text = "Kacang Kedelai, Kacang Tanah, Gandum, Jagung\r\n";
             // 
-            // label5
+            // labelRekomendasi
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(367, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(296, 51);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
+            this.labelRekomendasi.AutoSize = true;
+            this.labelRekomendasi.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRekomendasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelRekomendasi.Location = new System.Drawing.Point(367, 49);
+            this.labelRekomendasi.Name = "labelRekomendasi";
+            this.labelRekomendasi.Size = new System.Drawing.Size(250, 39);
+            this.labelRekomendasi.TabIndex = 20;
+            this.labelRekomendasi.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
     "lebih \r\ntahan terhadap kekeringan akan sangat cocok\r\n";
             // 
             // pictureBox4
@@ -440,7 +441,7 @@
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(23, 90);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(124, 24);
+            this.checkBox3.Size = new System.Drawing.Size(114, 23);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Survey Pupuk";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -451,7 +452,7 @@
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(23, 60);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(193, 24);
+            this.checkBox2.Size = new System.Drawing.Size(178, 23);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Mencari Benih Tanaman";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -462,25 +463,25 @@
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(23, 30);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(258, 24);
+            this.checkBox1.Size = new System.Drawing.Size(238, 23);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Mencari Tanaman Untuk Ditanam";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.labelCMK);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.pictureBox12);
-            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.labelJagung);
             this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.labelKedelai);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.labelBM);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.labelBP);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.labelBawMer);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.pictureBox11);
             this.groupBox3.Controls.Add(this.pictureBox10);
@@ -495,16 +496,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Highlight Harga Pasar";
             // 
-            // label22
+            // labelCMK
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Gray;
-            this.label22.Location = new System.Drawing.Point(268, 226);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 17);
-            this.label22.TabIndex = 34;
-            this.label22.Text = "Rp.99.999/kg";
+            this.labelCMK.AutoSize = true;
+            this.labelCMK.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCMK.ForeColor = System.Drawing.Color.Gray;
+            this.labelCMK.Location = new System.Drawing.Point(268, 226);
+            this.labelCMK.Name = "labelCMK";
+            this.labelCMK.Size = new System.Drawing.Size(73, 13);
+            this.labelCMK.TabIndex = 34;
+            this.labelCMK.Text = "Rp.99.999/kg";
             // 
             // label23
             // 
@@ -512,7 +513,7 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(266, 206);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 20);
+            this.label23.Size = new System.Drawing.Size(98, 19);
             this.label23.TabIndex = 35;
             this.label23.Text = "Cabai Keriting";
             // 
@@ -526,16 +527,16 @@
             this.pictureBox12.TabIndex = 33;
             this.pictureBox12.TabStop = false;
             // 
-            // label20
+            // labelJagung
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Gray;
-            this.label20.Location = new System.Drawing.Point(268, 142);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 17);
-            this.label20.TabIndex = 31;
-            this.label20.Text = "Rp.99.999/kg";
+            this.labelJagung.AutoSize = true;
+            this.labelJagung.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJagung.ForeColor = System.Drawing.Color.Gray;
+            this.labelJagung.Location = new System.Drawing.Point(268, 142);
+            this.labelJagung.Name = "labelJagung";
+            this.labelJagung.Size = new System.Drawing.Size(73, 13);
+            this.labelJagung.TabIndex = 31;
+            this.labelJagung.Text = "Rp.99.999/kg";
             // 
             // label21
             // 
@@ -543,20 +544,20 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(266, 122);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(59, 20);
+            this.label21.Size = new System.Drawing.Size(54, 19);
             this.label21.TabIndex = 32;
             this.label21.Text = "Jagung";
             // 
-            // label18
+            // labelKedelai
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Gray;
-            this.label18.Location = new System.Drawing.Point(267, 66);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 17);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Rp.99.999/kg";
+            this.labelKedelai.AutoSize = true;
+            this.labelKedelai.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKedelai.ForeColor = System.Drawing.Color.Gray;
+            this.labelKedelai.Location = new System.Drawing.Point(267, 66);
+            this.labelKedelai.Name = "labelKedelai";
+            this.labelKedelai.Size = new System.Drawing.Size(73, 13);
+            this.labelKedelai.TabIndex = 29;
+            this.labelKedelai.Text = "Rp.99.999/kg";
             // 
             // label19
             // 
@@ -564,20 +565,20 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(265, 46);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(104, 20);
+            this.label19.Size = new System.Drawing.Size(55, 19);
             this.label19.TabIndex = 30;
-            this.label19.Text = "Kacang Tanah";
+            this.label19.Text = "Kedelai";
             // 
-            // label16
+            // labelBM
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(62, 226);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(83, 17);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Rp.99.999/kg";
+            this.labelBM.AutoSize = true;
+            this.labelBM.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBM.ForeColor = System.Drawing.Color.Gray;
+            this.labelBM.Location = new System.Drawing.Point(62, 226);
+            this.labelBM.Name = "labelBM";
+            this.labelBM.Size = new System.Drawing.Size(73, 13);
+            this.labelBM.TabIndex = 27;
+            this.labelBM.Text = "Rp.99.999/kg";
             // 
             // label17
             // 
@@ -585,20 +586,20 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(60, 206);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 20);
+            this.label17.Size = new System.Drawing.Size(98, 19);
             this.label17.TabIndex = 28;
-            this.label17.Text = "Gandum";
+            this.label17.Text = "Beras Medium";
             // 
-            // label14
+            // labelBP
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(61, 142);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 17);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Rp.99.999/kg";
+            this.labelBP.AutoSize = true;
+            this.labelBP.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBP.ForeColor = System.Drawing.Color.Gray;
+            this.labelBP.Location = new System.Drawing.Point(61, 142);
+            this.labelBP.Name = "labelBP";
+            this.labelBP.Size = new System.Drawing.Size(73, 13);
+            this.labelBP.TabIndex = 25;
+            this.labelBP.Text = "Rp.99.999/kg";
             // 
             // label15
             // 
@@ -606,20 +607,20 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(59, 122);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 20);
+            this.label15.Size = new System.Drawing.Size(102, 19);
             this.label15.TabIndex = 26;
-            this.label15.Text = "Beras";
+            this.label15.Text = "Beras Premium";
             // 
-            // label13
+            // labelBawMer
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(62, 66);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 17);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Rp.99.999/kg";
+            this.labelBawMer.AutoSize = true;
+            this.labelBawMer.Font = new System.Drawing.Font("Segoe UI Semibold", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBawMer.ForeColor = System.Drawing.Color.Gray;
+            this.labelBawMer.Location = new System.Drawing.Point(62, 66);
+            this.labelBawMer.Name = "labelBawMer";
+            this.labelBawMer.Size = new System.Drawing.Size(73, 13);
+            this.labelBawMer.TabIndex = 24;
+            this.labelBawMer.Text = "Rp.99.999/kg";
             // 
             // label12
             // 
@@ -627,9 +628,9 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(60, 46);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(103, 20);
+            this.label12.Size = new System.Drawing.Size(102, 19);
             this.label12.TabIndex = 24;
-            this.label12.Text = "Bawang Putih";
+            this.label12.Text = "Bawang Merah";
             // 
             // pictureBox11
             // 
@@ -692,14 +693,15 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelLokasi);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -735,20 +737,20 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelLokasi;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelTemperature;
+        private System.Windows.Forms.Label labelCondition;
+        private System.Windows.Forms.Label labelLastUpdated;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelWind;
+        private System.Windows.Forms.Label labelHumidity;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelRekomendasi;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -758,21 +760,21 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelBawMer;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelCMK;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label labelJagung;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label labelKedelai;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label labelBM;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label labelBP;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel5;

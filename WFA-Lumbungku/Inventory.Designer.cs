@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(501, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 35);
+            this.label1.Size = new System.Drawing.Size(306, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "MANAJEMEN INVENTARIS";
             // 
@@ -91,7 +91,7 @@
             this.label2.Location = new System.Drawing.Point(255, 108);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(62, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama :";
             // 
@@ -103,7 +103,7 @@
             this.label3.Location = new System.Drawing.Point(253, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
+            this.label3.Size = new System.Drawing.Size(63, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Unit    :";
             // 
@@ -115,7 +115,7 @@
             this.label4.Location = new System.Drawing.Point(255, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.Size = new System.Drawing.Size(60, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tipe   :";
             // 
@@ -127,7 +127,7 @@
             this.label5.Location = new System.Drawing.Point(255, 255);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 20);
+            this.label5.Size = new System.Drawing.Size(63, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Stok   :";
             // 
@@ -139,14 +139,14 @@
             this.label6.Location = new System.Drawing.Point(560, 107);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.Size = new System.Drawing.Size(71, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Search :";
             // 
             // tbNama
             // 
             this.tbNama.Location = new System.Drawing.Point(325, 110);
-            this.tbNama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNama.Margin = new System.Windows.Forms.Padding(2);
             this.tbNama.Name = "tbNama";
             this.tbNama.Size = new System.Drawing.Size(205, 20);
             this.tbNama.TabIndex = 6;
@@ -154,7 +154,7 @@
             // tbUnit
             // 
             this.tbUnit.Location = new System.Drawing.Point(325, 155);
-            this.tbUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUnit.Margin = new System.Windows.Forms.Padding(2);
             this.tbUnit.Name = "tbUnit";
             this.tbUnit.Size = new System.Drawing.Size(205, 20);
             this.tbUnit.TabIndex = 7;
@@ -162,7 +162,7 @@
             // tbTipe
             // 
             this.tbTipe.Location = new System.Drawing.Point(325, 203);
-            this.tbTipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbTipe.Margin = new System.Windows.Forms.Padding(2);
             this.tbTipe.Name = "tbTipe";
             this.tbTipe.Size = new System.Drawing.Size(205, 20);
             this.tbTipe.TabIndex = 8;
@@ -170,7 +170,7 @@
             // tbStok
             // 
             this.tbStok.Location = new System.Drawing.Point(325, 256);
-            this.tbStok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStok.Margin = new System.Windows.Forms.Padding(2);
             this.tbStok.Name = "tbStok";
             this.tbStok.Size = new System.Drawing.Size(205, 20);
             this.tbStok.TabIndex = 9;
@@ -178,7 +178,7 @@
             // tbSearch
             // 
             this.tbSearch.Location = new System.Drawing.Point(631, 107);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(349, 20);
             this.tbSearch.TabIndex = 10;
@@ -189,7 +189,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAdd.Location = new System.Drawing.Point(286, 472);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(73, 31);
             this.btnAdd.TabIndex = 11;
@@ -203,7 +203,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnUpdate.Location = new System.Drawing.Point(375, 472);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(71, 31);
             this.btnUpdate.TabIndex = 12;
@@ -217,7 +217,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDelete.Location = new System.Drawing.Point(458, 472);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(71, 31);
             this.btnDelete.TabIndex = 13;
@@ -231,7 +231,7 @@
             this.btnReadHasil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReadHasil.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnReadHasil.Location = new System.Drawing.Point(750, 497);
-            this.btnReadHasil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReadHasil.Margin = new System.Windows.Forms.Padding(2);
             this.btnReadHasil.Name = "btnReadHasil";
             this.btnReadHasil.Size = new System.Drawing.Size(82, 25);
             this.btnReadHasil.TabIndex = 14;
@@ -245,7 +245,7 @@
             this.btnReadBibit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReadBibit.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnReadBibit.Location = new System.Drawing.Point(852, 497);
-            this.btnReadBibit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReadBibit.Margin = new System.Windows.Forms.Padding(2);
             this.btnReadBibit.Name = "btnReadBibit";
             this.btnReadBibit.Size = new System.Drawing.Size(82, 25);
             this.btnReadBibit.TabIndex = 15;
@@ -259,7 +259,7 @@
             this.btnReadAlat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReadAlat.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnReadAlat.Location = new System.Drawing.Point(951, 497);
-            this.btnReadAlat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReadAlat.Margin = new System.Windows.Forms.Padding(2);
             this.btnReadAlat.Name = "btnReadAlat";
             this.btnReadAlat.Size = new System.Drawing.Size(82, 25);
             this.btnReadAlat.TabIndex = 16;
@@ -272,7 +272,7 @@
             this.dgvBarang.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBarang.Location = new System.Drawing.Point(568, 140);
-            this.dgvBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBarang.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBarang.Name = "dgvBarang";
             this.dgvBarang.RowHeadersWidth = 62;
             this.dgvBarang.RowTemplate.Height = 28;
@@ -284,7 +284,7 @@
             // 
             this.btnFind.BackColor = System.Drawing.Color.White;
             this.btnFind.Location = new System.Drawing.Point(982, 105);
-            this.btnFind.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(2);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(51, 20);
             this.btnFind.TabIndex = 18;
@@ -300,7 +300,7 @@
             this.label7.Location = new System.Drawing.Point(256, 314);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 20);
+            this.label7.Size = new System.Drawing.Size(63, 18);
             this.label7.TabIndex = 19;
             this.label7.Text = "Foto   :";
             // 
@@ -308,7 +308,7 @@
             // 
             this.pictureBoxFoto.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBoxFoto.Location = new System.Drawing.Point(325, 314);
-            this.pictureBoxFoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxFoto.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(204, 101);
             this.pictureBoxFoto.TabIndex = 20;
@@ -320,7 +320,7 @@
             this.btnUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnUpload.Location = new System.Drawing.Point(325, 427);
-            this.btnUpload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(204, 25);
             this.btnUpload.TabIndex = 21;
@@ -334,7 +334,7 @@
             this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnLoad.Location = new System.Drawing.Point(568, 497);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(2);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(131, 25);
             this.btnLoad.TabIndex = 22;
@@ -414,12 +414,12 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-12, -16);
+            this.button3.Location = new System.Drawing.Point(-12, -12);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.button3.Size = new System.Drawing.Size(266, 86);
@@ -482,8 +482,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inventory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBarang)).EndInit();
