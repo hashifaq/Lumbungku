@@ -156,3 +156,4 @@ C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\HtmlAgilityPack.xml
 C:\Users\afixv\OneDrive - UGM 365\Documents\1_Kuliah\Semester 5\Junpro\Lumbungku\WFA-Lumbungku\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\OneDrive - UGM 365\Kuliah\Sem 5\Junpro\Lumbungku\WFA-Lumbungku\obj\Debug\WFA_Lumbungku.Register.resources
