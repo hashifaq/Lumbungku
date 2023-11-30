@@ -16,7 +16,7 @@ namespace WFA_Lumbungku
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HargaPasar());
+            Application.Run(new Login());
         }
     }
 }
