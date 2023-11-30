@@ -21,73 +21,80 @@ namespace WFA_Lumbungku
         }
         private async void getHargaProduk()
         {
-            var foodPrice = new FoodPrice();
-            // Mendapatkan harga dari API
-            var json = await foodPrice.getFoodPriceFromAPI();
-
-            // Deserialisasi JSON ke dalam list objek KomoditasData
-            List<KomoditasData> prices = JsonConvert.DeserializeObject<List<KomoditasData>>(json);
-
-            // Mendapatkan bulan saat ini
-            string currentMonth = DateTime.Now.ToString("MMMM");
-
-            // Iterasi melalui semua komoditas
-            foreach (var price in prices)
+            try
             {
-                // Mendapatkan nilai komoditas
-                string komoditas = price.Komoditas;
+                var foodPrice = new FoodPrice();
+                // Mendapatkan harga dari API
+                var json = await foodPrice.getFoodPriceFromAPI();
 
-                // Mendapatkan nilai untuk bulan saat ini
-                int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty(currentMonth).GetValue(price, null));
+                // Deserialisasi JSON ke dalam list objek KomoditasData
+                List<KomoditasData> prices = JsonConvert.DeserializeObject<List<KomoditasData>>(json);
 
-                if (komoditas == "GKP Tingkat Petani")
+                // Mendapatkan bulan saat ini
+                string currentMonth = DateTime.Now.ToString("MMMM");
+
+                // Iterasi melalui semua komoditas
+                foreach (var price in prices)
                 {
-                    labelGKPTP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    // Mendapatkan nilai komoditas
+                    string komoditas = price.Komoditas;
+
+                    // Mendapatkan nilai untuk bulan saat ini
+                    int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty(currentMonth).GetValue(price, null));
+
+                    if (komoditas == "GKP Tingkat Petani")
+                    {
+                        labelGKPTP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "GKP Tingkat Penggilingan")
+                    {
+                        labelGKPPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "GKG Tingkat Penggilingan")
+                    {
+                        labelGKGPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Beras Medium Penggilingan")
+                    {
+                        labelBM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Beras Premium Penggilingan")
+                    {
+                        labelBP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Jagung Pipilan Kering")
+                    {
+                        labelJagung.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Kedelai Biji Kering (Lokal)")
+                    {
+                        labelKedelai.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Bawang Merah")
+                    {
+                        labelBawMer.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Cabai Merah Keriting")
+                    {
+                        labelCMK.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Cabai Rawit Merah")
+                    {
+                        labelCRM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Ayam Ras Pedaging (Hidup)")
+                    {
+                        labelARP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
+                    else if (komoditas == "Telur Ayam Ras")
+                    {
+                        labelTAR.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
+                    }
                 }
-                else if (komoditas == "GKP Tingkat Penggilingan")
-                {
-                    labelGKPPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "GKG Tingkat Penggilingan")
-                {
-                    labelGKGPeng.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Beras Medium Penggilingan")
-                {
-                    labelBM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Beras Premium Penggilingan")
-                {
-                    labelBP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Jagung Pipilan Kering")
-                {
-                    labelJagung.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Kedelai Biji Kering (Lokal)")
-                {
-                    labelKedelai.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Bawang Merah")
-                {
-                    labelBawMer.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Cabai Merah Keriting")
-                {
-                    labelCMK.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Cabai Rawit Merah")
-                {
-                    labelCRM.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Ayam Ras Pedaging (Hidup)")
-                {
-                    labelARP.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
-                else if (komoditas == "Telur Ayam Ras")
-                {
-                    labelTAR.Text = "Rp." + nilaiBulanIni.ToString() + "/kg";
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
