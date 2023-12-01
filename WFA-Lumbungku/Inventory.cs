@@ -84,6 +84,7 @@ namespace WFA_Lumbungku
                 {
                     MessageBox.Show("Data added successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
+                    conn.Close();
                     LoadData();
                 }
                 else
@@ -139,6 +140,7 @@ namespace WFA_Lumbungku
                     {
                         MessageBox.Show("Data updated successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ClearFields();
+                        conn.Close();
                         LoadData();
                     }
                     else
@@ -182,6 +184,7 @@ namespace WFA_Lumbungku
                         {
                             MessageBox.Show("Data deleted successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             ClearFields();
+                            conn.Close();
                             LoadData();
                         }
                         else
