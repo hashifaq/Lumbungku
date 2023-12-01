@@ -128,11 +128,7 @@
             this.label31.ForeColor = System.Drawing.Color.Gray;
             this.label31.Location = new System.Drawing.Point(449, 226);
             this.label31.Name = "label31";
-<<<<<<< HEAD
-            this.label31.Size = new System.Drawing.Size(73, 13);
-=======
             this.label31.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label31.TabIndex = 45;
             this.label31.Text = "Rp.99.999/kg";
             // 
@@ -213,11 +209,7 @@
             this.labelTAR.ForeColor = System.Drawing.Color.Gray;
             this.labelTAR.Location = new System.Drawing.Point(655, 226);
             this.labelTAR.Name = "labelTAR";
-<<<<<<< HEAD
-            this.labelTAR.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelTAR.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelTAR.TabIndex = 52;
             this.labelTAR.Text = "Rp.99.999/kg";
             // 
@@ -238,11 +230,7 @@
             this.label37.ForeColor = System.Drawing.Color.Gray;
             this.label37.Location = new System.Drawing.Point(268, 226);
             this.label37.Name = "label37";
-<<<<<<< HEAD
-            this.label37.Size = new System.Drawing.Size(73, 13);
-=======
             this.label37.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label37.TabIndex = 34;
             this.label37.Text = "Rp.99.999/kg";
             // 
@@ -252,11 +240,7 @@
             this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(266, 206);
             this.label38.Name = "label38";
-<<<<<<< HEAD
-            this.label38.Size = new System.Drawing.Size(98, 19);
-=======
             this.label38.Size = new System.Drawing.Size(105, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label38.TabIndex = 35;
             this.label38.Text = "Cabai Keriting";
             // 
@@ -276,11 +260,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(653, 206);
             this.label2.Name = "label2";
-<<<<<<< HEAD
-            this.label2.Size = new System.Drawing.Size(105, 19);
-=======
             this.label2.Size = new System.Drawing.Size(113, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label2.TabIndex = 53;
             this.label2.Text = "Telur Ayam Ras";
             // 
@@ -301,11 +281,7 @@
             this.labelBawMer.ForeColor = System.Drawing.Color.Gray;
             this.labelBawMer.Location = new System.Drawing.Point(655, 142);
             this.labelBawMer.Name = "labelBawMer";
-<<<<<<< HEAD
-            this.labelBawMer.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelBawMer.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelBawMer.TabIndex = 49;
             this.labelBawMer.Text = "Rp.99.999/kg";
             // 
@@ -315,11 +291,7 @@
             this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(447, 206);
             this.label32.Name = "label32";
-<<<<<<< HEAD
-            this.label32.Size = new System.Drawing.Size(62, 19);
-=======
             this.label32.Size = new System.Drawing.Size(67, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label32.TabIndex = 46;
             this.label32.Text = "Gandum";
             // 
@@ -329,11 +301,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(653, 122);
             this.label4.Name = "label4";
-<<<<<<< HEAD
-            this.label4.Size = new System.Drawing.Size(102, 19);
-=======
             this.label4.Size = new System.Drawing.Size(112, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label4.TabIndex = 50;
             this.label4.Text = "Bawang Merah";
             // 
@@ -343,11 +311,7 @@
             this.label44.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(60, 206);
             this.label44.Name = "label44";
-<<<<<<< HEAD
-            this.label44.Size = new System.Drawing.Size(62, 19);
-=======
             this.label44.Size = new System.Drawing.Size(67, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label44.TabIndex = 28;
             this.label44.Text = "Gandum";
             // 
@@ -358,11 +322,7 @@
             this.labelBM.ForeColor = System.Drawing.Color.Gray;
             this.labelBM.Location = new System.Drawing.Point(654, 66);
             this.labelBM.Name = "labelBM";
-<<<<<<< HEAD
-            this.labelBM.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelBM.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelBM.TabIndex = 47;
             this.labelBM.Text = "Rp.99.999/kg";
             // 
@@ -372,11 +332,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(652, 46);
             this.label6.Name = "label6";
-<<<<<<< HEAD
-            this.label6.Size = new System.Drawing.Size(98, 19);
-=======
             this.label6.Size = new System.Drawing.Size(107, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label6.TabIndex = 48;
             this.label6.Text = "Beras Medium";
             // 
@@ -387,11 +343,7 @@
             this.labelARP.ForeColor = System.Drawing.Color.Gray;
             this.labelARP.Location = new System.Drawing.Point(449, 226);
             this.labelARP.Name = "labelARP";
-<<<<<<< HEAD
-            this.labelARP.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelARP.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelARP.TabIndex = 45;
             this.labelARP.Text = "Rp.99.999/kg";
             // 
@@ -401,11 +353,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(447, 206);
             this.label8.Name = "label8";
-<<<<<<< HEAD
-            this.label8.Size = new System.Drawing.Size(132, 19);
-=======
             this.label8.Size = new System.Drawing.Size(143, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label8.TabIndex = 46;
             this.label8.Text = "Ayam Ras Pedaging";
             // 
@@ -416,11 +364,7 @@
             this.labelKedelai.ForeColor = System.Drawing.Color.Gray;
             this.labelKedelai.Location = new System.Drawing.Point(448, 142);
             this.labelKedelai.Name = "labelKedelai";
-<<<<<<< HEAD
-            this.labelKedelai.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelKedelai.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelKedelai.TabIndex = 43;
             this.labelKedelai.Text = "Rp.99.999/kg";
             // 
@@ -430,11 +374,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(446, 122);
             this.label10.Name = "label10";
-<<<<<<< HEAD
-            this.label10.Size = new System.Drawing.Size(100, 19);
-=======
             this.label10.Size = new System.Drawing.Size(108, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label10.TabIndex = 44;
             this.label10.Text = "Kedelai Kering";
             // 
@@ -445,11 +385,7 @@
             this.label25.ForeColor = System.Drawing.Color.Gray;
             this.label25.Location = new System.Drawing.Point(655, 226);
             this.label25.Name = "label25";
-<<<<<<< HEAD
-            this.label25.Size = new System.Drawing.Size(73, 13);
-=======
             this.label25.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label25.TabIndex = 52;
             this.label25.Text = "Rp.99.999/kg";
             // 
@@ -470,11 +406,7 @@
             this.label43.ForeColor = System.Drawing.Color.Gray;
             this.label43.Location = new System.Drawing.Point(62, 226);
             this.label43.Name = "label43";
-<<<<<<< HEAD
-            this.label43.Size = new System.Drawing.Size(73, 13);
-=======
             this.label43.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label43.TabIndex = 27;
             this.label43.Text = "Rp.99.999/kg";
             // 
@@ -485,11 +417,7 @@
             this.labelGKGPeng.ForeColor = System.Drawing.Color.Gray;
             this.labelGKGPeng.Location = new System.Drawing.Point(449, 66);
             this.labelGKGPeng.Name = "labelGKGPeng";
-<<<<<<< HEAD
-            this.labelGKGPeng.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelGKGPeng.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelGKGPeng.TabIndex = 42;
             this.labelGKGPeng.Text = "Rp.99.999/kg";
             // 
@@ -500,11 +428,7 @@
             this.labelUpdate.ForeColor = System.Drawing.Color.Gray;
             this.labelUpdate.Location = new System.Drawing.Point(285, 57);
             this.labelUpdate.Name = "labelUpdate";
-<<<<<<< HEAD
-            this.labelUpdate.Size = new System.Drawing.Size(173, 13);
-=======
             this.labelUpdate.Size = new System.Drawing.Size(205, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelUpdate.TabIndex = 65;
             this.labelUpdate.Text = "Terakhir diupdate Thu 26, 10:24pm";
             // 
@@ -514,11 +438,7 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(447, 46);
             this.label24.Name = "label24";
-<<<<<<< HEAD
-            this.label24.Size = new System.Drawing.Size(123, 19);
-=======
             this.label24.Size = new System.Drawing.Size(131, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label24.TabIndex = 41;
             this.label24.Text = "GKG Penggilingan";
             // 
@@ -549,11 +469,7 @@
             this.labelCRM.ForeColor = System.Drawing.Color.Gray;
             this.labelCRM.Location = new System.Drawing.Point(264, 226);
             this.labelCRM.Name = "labelCRM";
-<<<<<<< HEAD
-            this.labelCRM.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelCRM.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelCRM.TabIndex = 34;
             this.labelCRM.Text = "Rp.99.999/kg";
             // 
@@ -563,11 +479,7 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(262, 206);
             this.label23.Name = "label23";
-<<<<<<< HEAD
-            this.label23.Size = new System.Drawing.Size(128, 19);
-=======
             this.label23.Size = new System.Drawing.Size(137, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label23.TabIndex = 35;
             this.label23.Text = "Cabai Rawit Merah";
             // 
@@ -588,11 +500,7 @@
             this.labelJagung.ForeColor = System.Drawing.Color.Gray;
             this.labelJagung.Location = new System.Drawing.Point(264, 142);
             this.labelJagung.Name = "labelJagung";
-<<<<<<< HEAD
-            this.labelJagung.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelJagung.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelJagung.TabIndex = 31;
             this.labelJagung.Text = "Rp.99.999/kg";
             // 
@@ -602,11 +510,7 @@
             this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(653, 206);
             this.label26.Name = "label26";
-<<<<<<< HEAD
-            this.label26.Size = new System.Drawing.Size(98, 19);
-=======
             this.label26.Size = new System.Drawing.Size(105, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label26.TabIndex = 53;
             this.label26.Text = "Cabai Keriting";
             // 
@@ -627,11 +531,7 @@
             this.label30.ForeColor = System.Drawing.Color.SeaGreen;
             this.label30.Location = new System.Drawing.Point(264, 22);
             this.label30.Name = "label30";
-<<<<<<< HEAD
-            this.label30.Size = new System.Drawing.Size(178, 30);
-=======
             this.label30.Size = new System.Drawing.Size(200, 35);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label30.TabIndex = 67;
             this.label30.Text = "HARGA PASAR";
             // 
@@ -641,11 +541,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(262, 122);
             this.label21.Name = "label21";
-<<<<<<< HEAD
-            this.label21.Size = new System.Drawing.Size(54, 19);
-=======
             this.label21.Size = new System.Drawing.Size(59, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label21.TabIndex = 32;
             this.label21.Text = "Jagung";
             // 
@@ -738,7 +634,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
@@ -806,11 +702,7 @@
             this.labelGKPPeng.ForeColor = System.Drawing.Color.Gray;
             this.labelGKPPeng.Location = new System.Drawing.Point(263, 66);
             this.labelGKPPeng.Name = "labelGKPPeng";
-<<<<<<< HEAD
-            this.labelGKPPeng.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelGKPPeng.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelGKPPeng.TabIndex = 29;
             this.labelGKPPeng.Text = "Rp.99.999/kg";
             // 
@@ -820,11 +712,7 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(264, 46);
             this.label19.Name = "label19";
-<<<<<<< HEAD
-            this.label19.Size = new System.Drawing.Size(122, 19);
-=======
             this.label19.Size = new System.Drawing.Size(131, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label19.TabIndex = 30;
             this.label19.Text = "GKP Penggilingan";
             // 
@@ -835,11 +723,7 @@
             this.labelCMK.ForeColor = System.Drawing.Color.Gray;
             this.labelCMK.Location = new System.Drawing.Point(62, 226);
             this.labelCMK.Name = "labelCMK";
-<<<<<<< HEAD
-            this.labelCMK.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelCMK.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelCMK.TabIndex = 27;
             this.labelCMK.Text = "Rp.99.999/kg";
             // 
@@ -849,11 +733,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(60, 206);
             this.label17.Name = "label17";
-<<<<<<< HEAD
-            this.label17.Size = new System.Drawing.Size(142, 19);
-=======
             this.label17.Size = new System.Drawing.Size(154, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label17.TabIndex = 28;
             this.label17.Text = "Cabai Merah Keriting";
             // 
@@ -864,11 +744,7 @@
             this.labelBP.ForeColor = System.Drawing.Color.Gray;
             this.labelBP.Location = new System.Drawing.Point(61, 142);
             this.labelBP.Name = "labelBP";
-<<<<<<< HEAD
-            this.labelBP.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelBP.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelBP.TabIndex = 25;
             this.labelBP.Text = "Rp.99.999/kg";
             // 
@@ -878,11 +754,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(59, 122);
             this.label15.Name = "label15";
-<<<<<<< HEAD
-            this.label15.Size = new System.Drawing.Size(102, 19);
-=======
             this.label15.Size = new System.Drawing.Size(112, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label15.TabIndex = 26;
             this.label15.Text = "Beras Premium";
             // 
@@ -893,11 +765,7 @@
             this.labelGKPTP.ForeColor = System.Drawing.Color.Gray;
             this.labelGKPTP.Location = new System.Drawing.Point(62, 66);
             this.labelGKPTP.Name = "labelGKPTP";
-<<<<<<< HEAD
-            this.labelGKPTP.Size = new System.Drawing.Size(73, 13);
-=======
             this.labelGKPTP.Size = new System.Drawing.Size(83, 17);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.labelGKPTP.TabIndex = 24;
             this.labelGKPTP.Text = "Rp.99.999/kg";
             // 
@@ -907,11 +775,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(60, 46);
             this.label12.Name = "label12";
-<<<<<<< HEAD
-            this.label12.Size = new System.Drawing.Size(130, 19);
-=======
             this.label12.Size = new System.Drawing.Size(138, 20);
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.label12.TabIndex = 24;
             this.label12.Text = "GKP Tingkat Petani";
             // 
@@ -993,12 +857,8 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.groupBox3);
-<<<<<<< HEAD
-=======
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
->>>>>>> 10360ceb4a49e99c7b367fb2e51abe4c6d141058
             this.Name = "HargaPasar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HargaPasar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
