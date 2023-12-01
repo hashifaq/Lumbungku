@@ -14,127 +14,43 @@ namespace WFA_Lumbungku
 {
     public partial class Inventory : Form
     {
+        private const string ConnectionString = "Host=rain.db.elephantsql.com;Port=5432;Username=xlkrufuv;Password=QetnzAz_gisckBoMl6z4CRuwpKpYPLY2;Database=xlkrufuv";
+        private NpgsqlConnection conn;
+        private NpgsqlCommand cmd;
+        private DataTable dataTable;
+
         public Inventory()
         {
             InitializeComponent();
+            conn = new NpgsqlConnection(ConnectionString);
+            dataTable = new DataTable();
         }
-        private NpgsqlConnection conn;
-        string connstring = "Host=rain.db.elephantsql.com;Port=5432;Username=xlkrufuv;Password=QetnzAz_gisckBoMl6z4CRuwpKpYPLY2;Database=xlkrufuv";
-        public static NpgsqlCommand cmd;
-        public DataTable dt;
-        private string sql = null;
-        private DataGridViewRow r;
 
         private void Inventory_Load(object sender, EventArgs e)
         {
-            conn = new NpgsqlConnection(connstring);
+            // Load data initially
+            LoadData();
+            tbTipe.Items.AddRange(new object[] { "Bibit", "Peralatan", "Hasil" });
+            // You can set a default value if needed
+            tbTipe.SelectedItem = "Bibit";
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+        private void LoadData()
         {
             try
             {
                 conn.Open();
-                dgvBarang.DataSource = null;    
-
-                sql = "SELECT * FROM public.product";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-
-                dgvBarang.DataSource = dt;
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                conn.Open();
-                sql = @"INSERT INTO public.product (user_id, name, quantity, unit, type, photo)
-                        VALUES (:_user_id, :_name, :_quantity, :_unit, :_type, :_photo);";
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_user_id", 1);
-                cmd.Parameters.AddWithValue("_name", tbNama.Text);
-                if (int.TryParse(tbStok.Text, out int quantity))
+                string sql = "SELECT * FROM product";
+                using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn))
                 {
-                    cmd.Parameters.AddWithValue("_quantity", quantity);
-                }
-                else
-                {
-                    throw new ArgumentException("Invalid quantity value.");
-                }
-                cmd.Parameters.AddWithValue("_unit", tbUnit.Text);
-                cmd.Parameters.AddWithValue("_type", tbTipe.Text);
-                cmd.Parameters.AddWithValue("_photo", pictureBoxFoto.Text);
-
-                if ((int)cmd.ExecuteScalar() == 1)
-                {
-                    MessageBox.Show("Data berhasil disimpan: ", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    conn.Close();
-                    btnReadHasil.PerformClick();
-                    tbNama.Text = tbStok.Text = tbTipe.Text = tbUnit.Text = null;
+                    dataTable.Clear();
+                    da.Fill(dataTable);
+                    dgvBarang.DataSource = dataTable;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Insert Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void dgvBarang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(e.RowIndex >= 0)
-            {
-                r = dgvBarang.Rows[e.RowIndex];
-                tbNama.Text = r.Cells["name"].Value.ToString();
-                tbStok.Text = r.Cells["quantity"].Value.ToString();
-                tbUnit.Text = r.Cells["unit"].Value.ToString();
-                tbTipe.Text = r.Cells["type"].Value.ToString();
-            }
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            if (r == null)
-            {
-                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            try
-            {
-                conn.Open();
-                sql = "UPDATE product SET name = @name, quantity = @quantity, unit = @unit, type = @type WHERE product_id = @product_id";
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("product_id", r.Cells["product_id"].Value.ToString());
-                cmd.Parameters.AddWithValue("name", tbNama.Text);
-                cmd.Parameters.AddWithValue("quantity", tbStok.Text);
-                cmd.Parameters.AddWithValue("unit", tbUnit.Text);
-                cmd.Parameters.AddWithValue("type", tbTipe.Text); 
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Data berhasil diupdate: ", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    tbNama.Text = tbStok.Text = tbTipe.Text = tbUnit.Text = null;
-                    r = null;
-                }
-                else
-                {
-                    MessageBox.Show("Data tidak ditemukan", "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Load Data Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -142,142 +58,47 @@ namespace WFA_Lumbungku
             }
         }
 
-
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void ClearFields()
         {
-            if (r == null)
-            {
-                MessageBox.Show("Mohon pilih baris data yang akan dihapus", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+            tbNama.Text = tbStok.Text = tbUnit.Text = tbTipe.Text = tbSearch.Text = string.Empty;
+            pictureBoxFoto.Image = null;
+        }
 
-            if (MessageBox.Show("Apakah benar Anda ingin menghapus data " + r.Cells["name"].Value.ToString() + " ?", "Hapus data terkonfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
             {
-                try
-                {
-                    conn.Open();
-                    sql = "DELETE FROM product WHERE product_id = @product_id";
-                    cmd = new NpgsqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("product_id", r.Cells["product_id"].Value.ToString());
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                conn.Open();
+                string sql = "INSERT INTO product (user_id, name, quantity, unit, type, photo) VALUES (@user_id, @name, @quantity, @unit, @type, @photo)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("user_id", 1); // Replace with the actual user_id
+                cmd.Parameters.AddWithValue("name", tbNama.Text);
+                cmd.Parameters.AddWithValue("quantity", Convert.ToInt32(tbStok.Text));
+                cmd.Parameters.AddWithValue("unit", tbUnit.Text);
+                cmd.Parameters.AddWithValue("type", tbTipe.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("photo", "path_to_photo"); // Replace with the actual path or URL
 
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Data berhasil dihapus: ", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        tbNama.Text = tbStok.Text = tbTipe.Text = tbUnit.Text = null;
-                        r = null;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Data tidak ditemukan", "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-                catch (Exception ex)
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Error: " + ex.Message, "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Data added successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearFields();
+                    LoadData();
                 }
-                finally
+                else
                 {
-                    conn.Close();
+                    MessageBox.Show("Failed to add data", "Add Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-        }
-
-
-        private void btnReadHasil_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                conn.Open();
-                dgvBarang.DataSource = null;
-
-                sql = "SELECT * FROM select_products_by_type('hasil');";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-
-                dgvBarang.DataSource = dt;
-                conn.Close();
-            }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Add Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnReadBibit_Click(object sender, EventArgs e)
-        {
-            try
+            finally
             {
-                conn.Open();
-                dgvBarang.DataSource = null;
-
-                sql = "SELECT * FROM select_products_by_type('bibit');";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-
-                dgvBarang.DataSource = dt;
                 conn.Close();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnReadAlat_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                conn.Open();
-                dgvBarang.DataSource = null;
-
-                sql = "SELECT * FROM select_products_by_type('alat');";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-
-                dgvBarang.DataSource = dt;
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void SearchByName(string name)
-        {
-            try
-            {
-                conn.Open();
-                dgvBarang.DataSource = null;
-
-                sql = "SELECT * FROM public.product WHERE name ILIKE @name";
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("name", "%" + name + "%"); // Use ILIKE for case-insensitive search
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-
-                dgvBarang.DataSource = dt;
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Search Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-        private void btnFind_Click(object sender, EventArgs e)
-        {
-            string nameToSearch = tbSearch.Text;
-            SearchByName(nameToSearch);
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -291,6 +112,191 @@ namespace WFA_Lumbungku
                 string selectedFilePath = openFileDialog.FileName;
 
                 pictureBoxFoto.Text = selectedFilePath;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dgvBarang.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvBarang.SelectedRows[0];
+
+                try
+                {
+                    conn.Open();
+                    string sql = "UPDATE product SET name = @name, quantity = @quantity, unit = @unit, type = @type, photo = @photo WHERE product_id = @product_id";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("product_id", Convert.ToInt32(selectedRow.Cells["product_id"].Value));
+                    cmd.Parameters.AddWithValue("name", tbNama.Text);
+                    cmd.Parameters.AddWithValue("quantity", Convert.ToInt32(tbStok.Text));
+                    cmd.Parameters.AddWithValue("unit", tbUnit.Text);
+                    cmd.Parameters.AddWithValue("type", tbTipe.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("photo", "path_to_photo"); // Replace with the actual path or URL
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Data updated successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearFields();
+                        LoadData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to update data", "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to update", "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvBarang.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvBarang.SelectedRows[0];
+
+                if (MessageBox.Show($"Are you sure you want to delete {selectedRow.Cells["name"].Value.ToString()}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        conn.Open();
+                        string sql = "DELETE FROM product WHERE product_id = @product_id";
+                        cmd = new NpgsqlCommand(sql, conn);
+                        cmd.Parameters.AddWithValue("product_id", Convert.ToInt32(selectedRow.Cells["product_id"].Value));
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data deleted successfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearFields();
+                            LoadData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to delete data", "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete", "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnReadHasil_Click(object sender, EventArgs e)
+        {
+            // Read data with type 'Hasil'
+            FilterDataByType("Hasil");
+        }
+
+        private void btnReadBibit_Click(object sender, EventArgs e)
+        {
+            // Read data with type 'Bibit'
+            FilterDataByType("Bibit");
+        }
+
+        private void btnReadAlat_Click(object sender, EventArgs e)
+        {
+            // Read data with type 'Peralatan'
+            FilterDataByType("Peralatan");
+        }
+
+        private void FilterDataByType(string type)
+        {
+            try
+            {
+                conn.Open();
+                string sql = "SELECT * FROM product WHERE type = @type";
+                using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("type", type);
+                    dataTable.Clear();
+                    da.Fill(dataTable);
+                    dgvBarang.DataSource = dataTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Filter Data Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            // Load all data
+            LoadData();
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            // Search data based on the provided text
+            string searchText = tbSearch.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                MessageBox.Show("Please enter a search term", "Search Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                conn.Open();
+                string sql = "SELECT * FROM product WHERE LOWER(name) LIKE @searchText OR LOWER(type) LIKE @searchText";
+                using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("searchText", "%" + searchText + "%");
+                    dataTable.Clear();
+                    da.Fill(dataTable);
+                    dgvBarang.DataSource = dataTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Search Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+        private DataGridViewRow r;
+
+        private void dgvBarang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                r = dgvBarang.Rows[e.RowIndex];
+                tbNama.Text = r.Cells["name"].Value.ToString();
+                tbStok.Text = r.Cells["quantity"].Value.ToString();
+                tbUnit.Text = r.Cells["unit"].Value.ToString();
+                tbTipe.Text = r.Cells["type"].Value.ToString();
             }
         }
 

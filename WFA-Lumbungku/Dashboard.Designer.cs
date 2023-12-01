@@ -54,8 +54,7 @@
             this.labelWind = new System.Windows.Forms.Label();
             this.labelHumidity = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelRekomendation = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -369,8 +368,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.labelRekomendation);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.labelTemp);
@@ -388,8 +386,9 @@
             this.groupBox1.Text = "Cuaca dan Rekomendasi";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label11
+            // labelRekomendation
             // 
+<<<<<<< HEAD
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -409,12 +408,22 @@
             this.label5.Size = new System.Drawing.Size(296, 51);
             this.label5.TabIndex = 20;
             this.label5.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
+=======
+            this.labelRekomendation.AutoSize = true;
+            this.labelRekomendation.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRekomendation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelRekomendation.Location = new System.Drawing.Point(367, 49);
+            this.labelRekomendation.Name = "labelRekomendation";
+            this.labelRekomendation.Size = new System.Drawing.Size(250, 39);
+            this.labelRekomendation.TabIndex = 20;
+            this.labelRekomendation.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
+>>>>>>> 825e311db536fb1bde407db9d8cb16ec6f17b357
     "lebih \r\ntahan terhadap kekeringan akan sangat cocok\r\n";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(677, 55);
+            this.pictureBox4.Location = new System.Drawing.Point(677, 49);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -750,9 +759,8 @@
         private System.Windows.Forms.Label labelWind;
         private System.Windows.Forms.Label labelHumidity;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelRekomendation;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
