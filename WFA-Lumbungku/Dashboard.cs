@@ -61,12 +61,35 @@ namespace WFA_Lumbungku
                 labelCondition.Text = weatherData.Current.Condition.Text;
                 labelWind.Text = "Wind: " + weatherData.Current.Wind_Mph.ToString();
                 labelHumidity.Text = "Humidity: " + weatherData.Current.Humidity.ToString() + "%";
+
+                BerikanRekomendasiTanaman(weatherData.Current.Temp_C, weatherData.Current.Wind_Mph, weatherData.Current.Humidity);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void BerikanRekomendasiTanaman(double suhu, double kecepatanAngin, double kelembaban)
+        {
+            if (suhu > 30 && kecepatanAngin < 10 && kelembaban > 60)
+            {
+                labelRekomendation.Text = "Rekomendasi: padi, melon, semangka";
+            }
+            else if (suhu > 25 && kecepatanAngin < 15 && kelembaban > 50)
+            {
+                labelRekomendation.Text = "Rekomendasi: jagung";
+            }
+            else if (suhu > 28 && kecepatanAngin < 12 && kelembaban > 55)
+            {
+                labelRekomendation.Text = "Rekomendasi: kedelai";
+            }
+            else
+            {
+                labelRekomendation.Text = "Tidak ada rekomendasi tanaman pada kondisi ini.";
+            }
+        }
+
         private async void getHargaProduk()
         {
             try
