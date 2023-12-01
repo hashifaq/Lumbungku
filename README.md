@@ -1,5 +1,4 @@
-
-![icoo](https://github.com/hashifaq/Lumbungku/assets/87812177/a02ce908-aa73-4b82-b044-eacaf8c7c5e2)
+![preview-dashboard](https://github.com/hashifaq/Lumbungku/assets/68465416/8740d442-f516-4c46-8b3c-1772c951dd20)
 
 # LumbungKu - Aplikasi Monitoring Pertanian
 LumbungKu adalah sebuah aplikasi Windows Forms yang dirancang untuk memudahkan sistem monitoring pertanian. LumbungKu diharapkan dapat membantu mendukung SDG’s nomor 1 dan 2 dengan mengurangi kemiskinan, kelaparan, serta membangun agrikultur atau pertanian yang berkelanjutan. 
