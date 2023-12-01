@@ -1,10 +1,11 @@
 # `Lumbungku`
 
 ## Kelompok ASAP
-
-- **Siti Hashifah Qatrunnada (Front End Developer)**
-- **Afix Vega Praditya (Software Architect, Front End Developer)**
-- **Maulana Anjari Anggorokasih (Backend Developer, Software Architect)**
+Nama | Role | NIM | Responsibility
+---|---|---|---
+Maulana Anjari Anggorokasih | Ketua Kelompok | 21/477748/TK/52619 | Backend Developer, Software Architect
+Afix Vega Praditya | Anggota 1 | 21/477810/TK/52629 | Software Architect, Front End Developer
+Siti Hashifah Qatrunnada | Anggota 2 | 21/483101/TK/53401 | Front End Developer
 
 ## Junior Project TI
 Departemen Tekik Elektro dan Teknologi Informasi
