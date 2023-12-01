@@ -7,7 +7,6 @@ namespace WFA_Lumbungku
 {
     public partial class Login : Form
     {
-        // Connection string for your PostgreSQL database
         private const string ConnectionString = "Host=rain.db.elephantsql.com;Port=5432;Username=xlkrufuv;Password=QetnzAz_gisckBoMl6z4CRuwpKpYPLY2;Database=xlkrufuv";
 
         public Login()
@@ -26,11 +25,13 @@ namespace WFA_Lumbungku
                 return;
             }
 
-            // Check the credentials against the database
             if (ValidateLogin(username, password))
             {
                 // Successful login
-                Dashboard dashboard = new Dashboard();
+                string name = GetUserName(username);
+                string location = GetUserLocation(username);
+
+                Dashboard dashboard = new Dashboard(username, name, location);
                 dashboard.Show();
                 this.Hide();
             }
@@ -38,6 +39,64 @@ namespace WFA_Lumbungku
             {
                 // Failed login
                 MessageBox.Show("Invalid username or password. Please try again.");
+            }
+        }
+
+
+
+        private string GetUserName(string username)
+        {
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    using (NpgsqlCommand command = new NpgsqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandType = CommandType.Text;
+                        command.CommandText = "SELECT name FROM pengguna WHERE username = @username";
+                        command.Parameters.AddWithValue("@username", username);
+
+                        object result = command.ExecuteScalar();
+
+                        return result != null ? result.ToString() : string.Empty;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in GetUserName: {ex.Message}");
+                return string.Empty;
+            }
+        }
+
+        private string GetUserLocation(string username)
+        {
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    using (NpgsqlCommand command = new NpgsqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandType = CommandType.Text;
+                        command.CommandText = "SELECT lokasi FROM pengguna WHERE username = @username";
+                        command.Parameters.AddWithValue("@username", username);
+
+                        object result = command.ExecuteScalar();
+
+                        return result != null ? result.ToString() : string.Empty;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in GetUserLocation: {ex.Message}");
+                return string.Empty;
             }
         }
 

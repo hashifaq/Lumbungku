@@ -37,7 +37,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbNama = new System.Windows.Forms.TextBox();
             this.tbUnit = new System.Windows.Forms.TextBox();
-            this.tbTipe = new System.Windows.Forms.TextBox();
             this.tbStok = new System.Windows.Forms.TextBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.tbTipe = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBarang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(501, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 30);
+            this.label1.Size = new System.Drawing.Size(347, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "MANAJEMEN INVENTARIS";
             // 
@@ -91,7 +91,7 @@
             this.label2.Location = new System.Drawing.Point(255, 108);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama :";
             // 
@@ -103,7 +103,7 @@
             this.label3.Location = new System.Drawing.Point(253, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 18);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Unit    :";
             // 
@@ -115,7 +115,7 @@
             this.label4.Location = new System.Drawing.Point(255, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 18);
+            this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tipe   :";
             // 
@@ -127,7 +127,7 @@
             this.label5.Location = new System.Drawing.Point(255, 255);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 18);
+            this.label5.Size = new System.Drawing.Size(70, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Stok   :";
             // 
@@ -139,7 +139,7 @@
             this.label6.Location = new System.Drawing.Point(560, 107);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 18);
+            this.label6.Size = new System.Drawing.Size(80, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Search :";
             // 
@@ -158,14 +158,6 @@
             this.tbUnit.Name = "tbUnit";
             this.tbUnit.Size = new System.Drawing.Size(205, 20);
             this.tbUnit.TabIndex = 7;
-            // 
-            // tbTipe
-            // 
-            this.tbTipe.Location = new System.Drawing.Point(325, 203);
-            this.tbTipe.Margin = new System.Windows.Forms.Padding(2);
-            this.tbTipe.Name = "tbTipe";
-            this.tbTipe.Size = new System.Drawing.Size(205, 20);
-            this.tbTipe.TabIndex = 8;
             // 
             // tbStok
             // 
@@ -300,7 +292,7 @@
             this.label7.Location = new System.Drawing.Point(256, 314);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 18);
+            this.label7.Size = new System.Drawing.Size(70, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Foto   :";
             // 
@@ -451,12 +443,21 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // tbTipe
+            // 
+            this.tbTipe.FormattingEnabled = true;
+            this.tbTipe.Location = new System.Drawing.Point(325, 208);
+            this.tbTipe.Name = "tbTipe";
+            this.tbTipe.Size = new System.Drawing.Size(205, 21);
+            this.tbTipe.TabIndex = 24;
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1064, 559);
+            this.Controls.Add(this.tbTipe);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnUpload);
@@ -472,7 +473,6 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.tbStok);
-            this.Controls.Add(this.tbTipe);
             this.Controls.Add(this.tbUnit);
             this.Controls.Add(this.tbNama);
             this.Controls.Add(this.label6);
@@ -509,7 +509,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNama;
         private System.Windows.Forms.TextBox tbUnit;
-        private System.Windows.Forms.TextBox tbTipe;
         private System.Windows.Forms.TextBox tbStok;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Button btnAdd;
@@ -533,5 +532,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox tbTipe;
     }
 }

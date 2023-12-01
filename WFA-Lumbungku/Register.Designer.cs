@@ -34,7 +34,6 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbLokasi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbRegion = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,11 +49,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.cbRegion);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.tbPassword);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.tbLokasi);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tbName);
             this.groupBox1.Controls.Add(this.lblPassword);
@@ -111,17 +111,6 @@
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "Password:";
-            // 
-            // tbLokasi
-            // 
-            this.tbLokasi.BackColor = System.Drawing.SystemColors.Window;
-            this.tbLokasi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbLokasi.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLokasi.Location = new System.Drawing.Point(33, 336);
-            this.tbLokasi.Name = "tbLokasi";
-            this.tbLokasi.Size = new System.Drawing.Size(320, 31);
-            this.tbLokasi.TabIndex = 8;
-            this.tbLokasi.WordWrap = false;
             // 
             // label1
             // 
@@ -201,6 +190,15 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // cbRegion
+            // 
+            this.cbRegion.Font = new System.Drawing.Font("Segoe UI", 14.9434F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegion.FormattingEnabled = true;
+            this.cbRegion.Location = new System.Drawing.Point(32, 335);
+            this.cbRegion.Name = "cbRegion";
+            this.cbRegion.Size = new System.Drawing.Size(321, 38);
+            this.cbRegion.TabIndex = 12;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,8 +230,8 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbLokasi;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbRegion;
     }
 }
