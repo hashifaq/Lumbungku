@@ -15,11 +15,24 @@ namespace WFA_Lumbungku
 {
     public partial class Dashboard : Form
     {
+        private string loggedInUsername;
+        private string loggedInName;
+        private string loggedInLocation;
+
         public Dashboard()
         {
             InitializeComponent();
             getHargaProduk();
             getWeatherData();
+        }
+
+        public Dashboard(string username, string name, string location)
+        {
+            InitializeComponent();
+            loggedInUsername = username;
+            loggedInName = name;
+            lblNama.Text = $"{name}!";
+            lblLokasi.Text = $"Kode Pos: {location}";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -121,6 +134,10 @@ namespace WFA_Lumbungku
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
         }
     }
 }

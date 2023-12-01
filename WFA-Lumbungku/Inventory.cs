@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -101,7 +102,7 @@ namespace WFA_Lumbungku
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(r == null)
+            if (r == null)
             {
                 MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -110,26 +111,37 @@ namespace WFA_Lumbungku
             try
             {
                 conn.Open();
-                sql = "SELECT * FROM update_product(product_id, name , quantity, unit, type)";
+                sql = "UPDATE product SET name = @name, quantity = @quantity, unit = @unit, type = @type WHERE product_id = @product_id";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("product_id", r.Cells["product_id"].Value.ToString());
                 cmd.Parameters.AddWithValue("name", tbNama.Text);
                 cmd.Parameters.AddWithValue("quantity", tbStok.Text);
                 cmd.Parameters.AddWithValue("unit", tbUnit.Text);
-                cmd.Parameters.AddWithValue("type", tbUnit.Text);
-                if ((int)cmd.ExecuteScalar() == 1)
+                cmd.Parameters.AddWithValue("type", tbTipe.Text); 
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
                 {
                     MessageBox.Show("Data berhasil diupdate: ", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    conn.Close();
                     tbNama.Text = tbStok.Text = tbTipe.Text = tbUnit.Text = null;
                     r = null;
+                }
+                else
+                {
+                    MessageBox.Show("Data tidak ditemukan", "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Update Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                conn.Close();
+            }
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -139,28 +151,38 @@ namespace WFA_Lumbungku
                 return;
             }
 
-            if (MessageBox.Show("Apakah benar Anda ingin menghapus data "+r.Cells["name"].Value.ToString()+" ?", "Hapus data terkonfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Apakah benar Anda ingin menghapus data " + r.Cells["name"].Value.ToString() + " ?", "Hapus data terkonfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 try
                 {
                     conn.Open();
-                    sql = "SELECT * FROM delete_product(product_id)";
+                    sql = "DELETE FROM product WHERE product_id = @product_id";
                     cmd = new NpgsqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("product_id", r.Cells["product_id"].Value.ToString());
-                    if ((int)cmd.ExecuteScalar() == 1)
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
                     {
                         MessageBox.Show("Data berhasil dihapus: ", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        conn.Close();
                         tbNama.Text = tbStok.Text = tbTipe.Text = tbUnit.Text = null;
                         r = null;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data tidak ditemukan", "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message, "Delete Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
+
 
         private void btnReadHasil_Click(object sender, EventArgs e)
         {

@@ -7,7 +7,6 @@ namespace WFA_Lumbungku
 {
     public partial class Register : Form
     {
-        // Connection string for your PostgreSQL database
         private const string ConnectionString = "Host=rain.db.elephantsql.com;Port=5432;Username=xlkrufuv;Password=QetnzAz_gisckBoMl6z4CRuwpKpYPLY2;Database=xlkrufuv";
 
         public Register()
@@ -20,22 +19,18 @@ namespace WFA_Lumbungku
             string name = tbName.Text.Trim();
             string username = tbUsername.Text.Trim();
             string password = tbPassword.Text;
-            string lokasi = tbLokasi.Text;
+            string lokasi = cbRegion.Text;
 
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(lokasi))
             {
                 MessageBox.Show("Please fill in all fields.");
                 return;
             }
-
-            // Check if the username already exists
             if (IsUsernameExists(username))
             {
                 MessageBox.Show("Username already exists. Please choose a different username.");
                 return;
             }
-
-            // Insert new user data into the database
             if (RegisterUser(name, username, password, lokasi))
             {
                 MessageBox.Show("Registration successful. You can now log in.");
