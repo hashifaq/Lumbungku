@@ -2,122 +2,104 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumbungku - Modul 1</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    .responsibility {
-      font-weight: bold;
-    }
-
-    .application-info {
-      margin-bottom: 20px;
-    }
-
-    .solution-list {
-      margin-bottom: 20px;
-    }
-
-    .future-development {
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="https://github.com/hashifaq/Lumbungku/assets/87812177/5c88307f-7a2c-489e-abb8-4ddc57022dce" type="image/x-icon">
+    <title>Lumbungku</title>
 </head>
 
-<body>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-md shadow-md">
+        <img src="https://github.com/hashifaq/Lumbungku/assets/87812177/a671604d-aaf7-49fd-ba48-f63c8e1535a8" alt="Lumbungku Logo" class="w-24 h-24 mx-auto mb-4 rounded-full">
+        <h1 class="text-3xl font-bold mb-6">Lumbungku</h1>
 
-  <h1>Lumbungku</h1>
+        <div class="mb-8">
+            
+            <h2 class="text-xl font-bold mb-2">Kelompok ASAP</h2>
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Nama</th>
+                        <th class="px-4 py-2">Role</th>
+                        <th class="px-4 py-2">NIM</th>
+                        <th class="px-4 py-2">Responsibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Maulana Anjari Anggorokasih</td>
+                        <td class="border px-4 py-2">Ketua Kelompok</td>
+                        <td class="border px-4 py-2">21/477748/TK/52619</td>
+                        <td class="border px-4 py-2">Backend Developer, Software Architect</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Afix Vega Praditya</td>
+                        <td class="border px-4 py-2">Anggota 1</td>
+                        <td class="border px-4 py-2">21/477810/TK/52629</td>
+                        <td class="border px-4 py-2">Software Architect, Front End Developer</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Siti Hashifah Qatrunnada</td>
+                        <td class="border px-4 py-2">Anggota 2</td>
+                        <td class="border px-4 py-2">21/483101/TK/53401</td>
+                        <td class="border px-4 py-2">Front End Developer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-  <div class="application-info">
-    <h2>Kelompok ASAP - Junior Project TI</h2>
-    <table>
-      <tr>
-        <th>Nama</th>
-        <th>Role</th>
-        <th>NIM</th>
-        <th class="responsibility">Responsibility</th>
-      </tr>
-      <tr>
-        <td>Maulana Anjari Anggorokasih</td>
-        <td>Ketua Kelompok</td>
-        <td>21/477748/TK/52619</td>
-        <td>Backend Developer, Software Architect</td>
-      </tr>
-      <tr>
-        <td>Afix Vega Praditya</td>
-        <td>Anggota 1</td>
-        <td>21/477810/TK/52629</td>
-        <td>Software Architect, Front End Developer</td>
-      </tr>
-      <tr>
-        <td>Siti Hashifah Qatrunnada</td>
-        <td>Anggota 2</td>
-        <td>21/483101/TK/53401</td>
-        <td>Front End Developer</td>
-      </tr>
-    </table>
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Modul 1 - Nama Aplikasi: Lumbungku</h2>
+            <p class="mb-4">Tipe Aplikasi: Windows Form</p>
+            <p>LumbungKu adalah sebuah aplikasi Windows Forms yang dirancang untuk memudahkan sistem monitoring pertanian. LumbungKu diharapkan dapat membantu mendukung SDG's nomor 1 dan 2 dengan mengurangi kemiskinan, kelaparan, serta membangun agrikultur atau pertanian yang berkelanjutan.</p>
+            <ul class="list-disc pl-8">
+                <li>Mengurangi resiko gagal panen (sistem rekomendasi)</li>
+                <li>Mengoptimalkan hasil produksi pertanian</li>
+                <li>Memudahkan distribusi hasil panen (ke pabrik, ke pasar, ke konsumen)</li>
+                <li>Memudahkan manajemen lumbung (pupuk, obat, hasil panen, alat tani, truk)</li>
+                <li>Mensejahterakan para petani agar mendapatkan harga jual sesuai dengan kondisi pasar atau tidak terlalu rendah</li>
+            </ul>
+        </div>
 
-    <h2>Modul 1</h2>
-    <p><strong>Nama Aplikasi:</strong> Lumbungku</p>
-    <p><strong>Tipe Aplikasi:</strong> Windows Form</p>
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Permasalahan yang dipecahkan</h2>
+            <ol class="list-decimal pl-8">
+                <li>Beberapa petani tidak mendapatkan harga jual yang layak dari hasil pertaniannya.</li>
+                <li>Banyaknya gagal panen karena kurangnya mitigasi preventif oleh petani dari mulainya musim tanam hingga musim panen.</li>
+                <li>Pencatatan inventaris dan hasil pertanian yang kurang baik.</li>
+            </ol>
+        </div>
 
-    <p>
-      LumbungKu adalah sebuah aplikasi Windows Forms yang dirancang untuk memudahkan sistem monitoring pertanian. LumbungKu diharapkan dapat membantu mendukung SDG's nomor 1 dan 2 dengan mengurangi kemiskinan, kelaparan, serta membangun agrikultur atau pertanian yang berkelanjutan.
-    </p>
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Solusi yang diusulkan beserta fitur</h2>
+            <ol class="list-decimal pl-8">
+                <li>Menampilkan harga pasar pertanian agar para petani dapat mengetahui harga pasar dari hasil pertanian mereka untuk mencegah mereka mendapatkan harga yang rendah.</li>
+                <li>Membantu petani membuat rencana tani dengan sistem rekomendasi tanaman apa yang cocok untuk lokasi dan waktu tertentu berdasarkan data dari BMKG, weather.</li>
+                <li>Manajemen inventaris lumbung/gudang petani</li>
+                <li>Sistem penjadwalan pertanian untuk mengoptimalkan hasil pertanian dan meminimalisir kegagalan panen.</li>
+            </ol>
+        </div>
 
-    <div class="solution-list">
-      <h3>Solusi yang diusulkan beserta fitur:</h3>
-      <ol>
-        <li>Menampilkan harga pasar pertanian agar para petani dapat mengetahui harga pasar dari hasil pertanian mereka untuk mencegah mereka mendapatkan harga yang rendah.</li>
-        <li>Membantu petani membuat rencana tani dengan sistem rekomendasi tanaman apa yang cocok untuk lokasi dan waktu tertentu berdasarkan data dari BMKG, weather.</li>
-        <li>Manajemen inventaris lumbung/gudang petani</li>
-        <li>Sistem penjadwalan pertanian untuk mengoptimalkan hasil pertanian dan meminimalisir kegagalan panen.</li>
-      </ol>
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Aplikasi sejenis yang mirip</h2>
+            <ul class="list-disc pl-8">
+                <li>Farmbrite</li>
+                <li>TaniHub</li>
+                <li>PickApp Farming Solution</li>
+            </ul>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Pengembangan Selanjutnya</h2>
+            <ol class="list-decimal pl-8">
+                <li>Implementasi IoT</li>
+                <li>Monitoring lahan dari satelit</li>
+                <li>Membantu manajemen distribusi hasil pertanian</li>
+                <li>Membantu menghubungkan petani dengan retailer</li>
+            </ol>
+        </div>
     </div>
-
-    <h3>Aplikasi sejenis yang mirip:</h3>
-    <ul>
-      <li>Farmbrite</li>
-      <li>TaniHub</li>
-      <li>PickApp Farming Solution</li>
-    </ul>
-  </div>
-
-  <div class="future-development">
-    <h3>Pengembangan Selanjutnya:</h3>
-    <ol>
-      <li>Implementasi IoT</li>
-      <li>Monitoring lahan dari satelit</li>
-      <li>Membantu manajemen distribusi hasil pertanian</li>
-      <li>Membantu menghubungkan petani dengan retailer</li>
-    </ol>
-  </div>
-
 </body>
 
 </html>
