@@ -388,36 +388,14 @@
             // 
             // labelRekomendation
             // 
-<<<<<<< HEAD
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 8.150944F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(367, 103);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(317, 17);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Kacang Kedelai, Kacang Tanah, Gandum, Jagung\r\n";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(367, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(296, 51);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
-=======
             this.labelRekomendation.AutoSize = true;
             this.labelRekomendation.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRekomendation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelRekomendation.Location = new System.Drawing.Point(367, 49);
             this.labelRekomendation.Name = "labelRekomendation";
-            this.labelRekomendation.Size = new System.Drawing.Size(250, 39);
+            this.labelRekomendation.Size = new System.Drawing.Size(296, 51);
             this.labelRekomendation.TabIndex = 20;
             this.labelRekomendation.Text = "Cuaca akan kering dalam beberapa bulan kedepan \r\nbeberapa tanaman yang cenderung " +
->>>>>>> 825e311db536fb1bde407db9d8cb16ec6f17b357
     "lebih \r\ntahan terhadap kekeringan akan sangat cocok\r\n";
             // 
             // pictureBox4
