@@ -38,7 +38,8 @@ namespace WFA_Lumbungku
                 string komoditas = price.Komoditas;
 
                 // Mendapatkan nilai untuk bulan saat ini
-                int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty(currentMonth).GetValue(price, null));
+                // int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty(currentMonth).GetValue(price, null));
+                int nilaiBulanIni = Convert.ToInt32(price.GetType().GetProperty("November").GetValue(price, null));
 
                 if (komoditas == "GKP Tingkat Petani")
                 {
